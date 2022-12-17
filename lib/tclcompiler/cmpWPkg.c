@@ -2,12 +2,6 @@
 #include "cmpInt.h"
 #include "cmpWrite.h"
 
-/*
- * :: ActiveState patch :: Retrieval and verification of ASPN/Tcl license.
- */
-
-#include "tp_license.c"
-
 /* 
  * cmpWPkg.c --
  *
@@ -75,8 +69,6 @@ static CONST CmdTable commands[] =
     { "compile",		Compiler_CompileObjCmd,			1 },
     { "getBytecodeExtension",	Compiler_GetBytecodeExtensionObjCmd,	1 },
     { "getTclVer",              Compiler_GetTclVerObjCmd,		1 },
-
-    { "tdk_license",     TdkLicenseObjCmd, 1 },
     { 0, 0, 0 }
 };
 

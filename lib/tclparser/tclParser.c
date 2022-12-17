@@ -1,9 +1,3 @@
-/*
- * :: ActiveState patch :: Retrieval and verification of ASPN/Tcl license.
- */
-
-#include "tp_license.c"
-
 /* 
  * tclParser.c --
  *
@@ -123,11 +117,7 @@ Tclparser_Init(interp)
 	return res;
       }
     }
-
     Tcl_CreateObjCommand(interp, "parse", ParseObjCmd, NULL, NULL);
-
-    Tcl_CreateObjCommand(interp, "tdk_license", TdkLicenseObjCmd, NULL, NULL);
-
     return Tcl_PkgProvide(interp, packageName, packageVersion);
 }
 
